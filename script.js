@@ -24,7 +24,7 @@ function validate() {
     }
 }
 
-function calcDay(){
+function calcDayValue(){
 year = document.getElementById("year").value;
 CC = parseInt(year.substring(0,2));
 YY = parseInt(year.substring(2,4));
@@ -46,4 +46,29 @@ function getGenders(){
       else{
         return false;
       }
+      switch(gender){
+        case "male":
+      if (dayValue == 1){
+        alert(" born "+dayNames[0] + " akan name " +maleNames[0]+"!");
+      }
+      else if(dayValue == 2){
+        alert(" born "+dayNames[1] + " akan name  " +maleNames[1]+"!");
+      }
+      else if(dayValue == 3){
+        alert(" born "+dayNames[2]+ "  akan name  " +maleNames[2]+"!");
+      }
+      else if(dayValue == 4){
+        alert(" born "+dayNames[3] +  " akan name  " +maleNames[3]+"!");
+      }
+      else if(dayValue == 5){
+        alert(" born "+dayNames[4] +  "  akan name  " +maleNames[4]+"!");
+      }
+      else if(dayValue == 6){
+        alert(" born "+dayNames[5] +  "  akan name  " +maleNames[5]+"!");
+      }
+      else if(dayValue == -0){
+        alert(" born "+dayNames[6] + "  akan name  " +maleNames[6]+"!");
+      }
+    break;
+    }
 }
