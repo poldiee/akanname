@@ -6,6 +6,7 @@
 
 ## Description
 
+Web app which takes date of birth of someone to calculate day of week born and show "akan" name as per their gender.
 
 
 ## Live Page 
@@ -20,6 +21,7 @@
 * CSS
 * JavaScript
 *
+* Bootstrap
 
 ## Contact Information 
 
