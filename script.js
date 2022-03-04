@@ -37,4 +37,13 @@ return (Math.floor(d));
 
 function getGenders(){
     var gender = document.getElementsByName("gender");
+    if(gender[0].checked == true){
+        var gender = "male";
+      }
+      else if(gender[1].checked == true){
+        var gender = "female";
+      }
+      else{
+        return false;
+      }
 }
