@@ -11,8 +11,44 @@
 </head>
 <body class="container-fluid" style="background-image:url(images/bg.png)">
     <div id="header">
-        <img src="images/can.jpg" width="50" height="50" alt="">
+
+        <img src="images/can.jpg" width="80" height="70" alt="">
         <h1><strong> <em> Akan Names!</em></strong></h1>
+        
+    </div>
+    <div class="overlay">
+        <div class="container">
+            <h2><strong>Fill in the Required Fields</strong></h2>
+            <form name="userForm" class="form" onsubmit="validate();">
+            <div class="form-group">
+                <label for="year">Enter Year of Birth</label>
+                <input type="number" class="form-control" id="year" placeholder="eg 2022" name="year">
+            </div>
+            <div class="form-group">
+                <label for="month">Enter Month of Birth</label>
+                <input type="number" class="form-control" id="month" placeholder="eg month 12 for Dec..." name="year">
+            </div>
+            <div class="form-group">
+                <label for="day">Enter Day of Birth</label>
+                <input type="number" class="form-control" id="day" placeholder="24th" name="day">
+            </div>
+            <div class="form-group">
+                <label for="month">Gender</label><br>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="findName();">Get Name</button>
+            </form>
+        </div>
+
     </div>
 </body>
 </html>
