@@ -35,3 +35,6 @@ console.log(d);
 return (Math.floor(d));
 }
 
+function getGenders(){
+    var gender = document.getElementsByName("gender");
+}
