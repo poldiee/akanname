@@ -51,7 +51,7 @@ function getGenders(){
       if (dayVal == 1){
         alert(" born "+dayNme[0] + " akan name " +maleNme[0]+"!");
       }
-      else if(dayValue == 2){
+      else if(dayVal == 2){
         alert(" born "+dayNme[1] + " akan name  " +maleNme[1]+"!");
       }
       else if(dayVal == 3){
