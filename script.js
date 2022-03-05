@@ -24,7 +24,7 @@ function validate() {
     }
 }
 
-function calcDayValue(){
+function calculateDayValue(){
 year = document.getElementById("year").value;
 CC = parseInt(year.substring(0,2));
 YY = parseInt(year.substring(2,4));
@@ -48,55 +48,55 @@ function getGenders(){
       }
       switch(gender){
         case "male":
-      if (dayValue == 1){
-        alert(" born "+dayNames[0] + " akan name " +maleNames[0]+"!");
+      if (dayVal == 1){
+        alert(" born "+dayNme[0] + " akan name " +maleNme[0]+"!");
       }
       else if(dayValue == 2){
-        alert(" born "+dayNames[1] + " akan name  " +maleNames[1]+"!");
+        alert(" born "+dayNme[1] + " akan name  " +maleNme[1]+"!");
       }
-      else if(dayValue == 3){
-        alert(" born "+dayNames[2]+ "  akan name  " +maleNames[2]+"!");
+      else if(dayVal == 3){
+        alert(" born "+dayNme[2]+ "  akan name  " +maleNme[2]+"!");
       }
-      else if(dayValue == 4){
-        alert(" born "+dayNames[3] +  " akan name  " +maleNames[3]+"!");
+      else if(dayVal == 4){
+        alert(" born "+dayNme[3] +  " akan name  " +maleNme[3]+"!");
       }
-      else if(dayValue == 5){
-        alert(" born "+dayNames[4] +  "  akan name  " +maleNames[4]+"!");
+      else if(dayVal == 5){
+        alert(" born "+dayNme[4] +  "  akan name  " +maleNme[4]+"!");
       }
-      else if(dayValue == 6){
-        alert(" born "+dayNames[5] +  "  akan name  " +maleNames[5]+"!");
+      else if(dayVal == 6){
+        alert(" born "+dayNme[5] +  "  akan name  " +maleNme[5]+"!");
       }
-      else if(dayValue == -0){
-        alert(" born "+dayNames[6] + "  akan name  " +maleNames[6]+"!");
+      else if(dayVal == -0){
+        alert(" born "+dayNme[6] + "  akan name  " +maleNme[6]+"!");
       }
     break;
     case "female":
-        if (dayValue == 1){
-            alert(" born  "+dayNames[0] + "  akan name   " +femaleNames[0]+"!");
+        if (dayVal == 1){
+            alert(" born  "+dayNme[0] + "  akan name   " +femaleNme[0]+"!");
           }
-          else if(dayValue == 2){
-            alert(" born  " +dayNames[1] + "  akan name  " +femaleNames[1]+"!");
+          else if(dayVal == 2){
+            alert(" born  " +dayNme[1] + "  akan name  " +femaleNme[1]+"!");
           }
-          else if(dayValue == 3){
-            alert(" born  " +dayNames[2] + "  akan name  " +femaleNames[2]+"!");
+          else if(dayVal == 3){
+            alert(" born  " +dayNme[2] + "  akan name  " +femaleNme[2]+"!");
           }
-          else if(dayValue == 4){
-            alert(" born  " +dayNames[3] + "  akan name  " +femaleNames[3]+"!");
+          else if(dayVal == 4){
+            alert(" born  " +dayNme[3] + "  akan name  " +femaleNme[3]+"!");
           }
-          else if(dayValue == 5){
-            alert(" born  " +dayNames[4] + "  akan name  " +femaleNames[4]+"!");
+          else if(dayVal == 5){
+            alert(" born  " +dayNme[4] + "  akan name  " +femaleNme[4]+"!");
           }
-          else if(dayValue == 6){
-            alert(" born  " +dayNames[5] + "  akan name  " + femaleNames[5]+"!");
+          else if(dayVal == 6){
+            alert(" born  " +dayNme[5] + "  akan name  " + femaleNme[5]+"!");
           }
-          else if(dayValue == -0){
-            alert(" born  " +dayNames[6] + "  akan name  " +femaleNames[6]+"!");
+          else if(dayVal == -0){
+            alert(" born  " +dayNme[6] + "  akan name  " +femaleNme[6]+"!");
           }
         break
         default:
     }
 }
 function findName(){
-    dayValue = calcDayValue();
+    dayVal = calculateDayValue();
     getGenders();
 }
