@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,14 +26,14 @@
             </div>
             <div class="form-group">
                 <label for="month">Enter Month of Birth</label>
-                <input type="number" class="form-control" id="month" placeholder="eg month 12 for Dec..." name="year">
+                <input type="number" class="form-control" id="month" placeholder="eg month 12 for Dec..." name="month">
             </div>
             <div class="form-group">
                 <label for="day">Enter Day of Birth</label>
                 <input type="number" class="form-control" id="day" placeholder="24th" name="day">
             </div>
             <div class="form-group">
-                <label for="name">Gender</label><br>
+                <label for="month">Genders</label><br>
                 <div class="form-check-inline">
                   <label class="form-check-label">
                     <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 
@@ -71,5 +71,98 @@
             </div>
     </div>
     <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="/images/akantitle.ico" />
+  <title>Akan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento,Playfair+Display+SC,Sorts+Mill+Goudy &display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Gugi|Kalam" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="style/bootstrap.css">
+  <link rel="stylesheet" href="style/styles.css">
+</head>
+<body class="container-fluid" style="background-image:url(images/bg.png);">
+  <div id="heading"> 
+    <img src="images/can.jpg" alt=" ">
+    <h1>Akan Names</h1>
+    <h2 id="get">Get Akan Name Reliably!!!</h2>
+  </div>
+  <div class="overlay">
+      <div class="container">
+        <h2>Enter Details</h2>
+        <form name="myForm" class="form" onsubmit="validate();">
+          <div class="form-group">
+            <label for="number">Year of Birth:</label>
+            <input type="number" class="form-control" id="year" placeholder="Year of Birth eg: 2022" name="year">
+          </div>
+          <div class="form-group">
+            <label for="month">Month of Birth:</label>
+            <input type="number" class="form-control" id="month" placeholder="Month of Born" name="month">
+          </div>
+          <div class="form-group">
+            <label for="date">Date of Birth:</label>
+            <input type="number" class="form-control" id="date" placeholder="Date of Birth eg: 07th July" name="date">
+          </div>
+          <div class="form-group">
+            <label for="month">Gender</label><br>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="findName();">Get Name</button>
+          <br>
+        </form>
+        <p id="results"> </p>
+      </div>
+  </div>
+  <div class="card-deck">
+    <div class="card ">
+      <div class="card-body text-center">
+        <p class="card-text">Akans derived from Ghanian culture. obtain by filling form above!</p>
+      </div>
+    </div>
+    <div class="card ">
+        <div class="card-body text-center">
+          <p class="card-text">Names are based on gender and the date you were born. <br>
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-globe fa-stack-1x" style="color:rgb(71, 41, 16)"></i>
+              </span><a href="http://www.afropedea.org/akan-names"> info on Akan</a>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <h3><em>Akan Social</em></h3>
+        <a href="https://www.researchgate.net/figure/Akan-Days-and-Birthday-Names-male-and-Female_tbl1_239815297"><img class="card-img-top" src="images/akanleadership.jpg" width="500" height="450" alt="Card image cap">
+        </a>
+      <div class="card-body">
+        <h5 class="card-title">Naming</h5>
+        <p class="card-text">In West Africa, ie, Ghana, Togo, Ivory Coast, children are given a 1st name occassionally as per the day when they were born, i.e, amontgst the 7 days of the week.</p>
+        <p class="card-text"><small>DOB and Gender also determines names given.</small>
+    </p>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer ">
+    <div class="footer-copyright text-center py-3">Copyright (c) 2022:
+      <a href="https://poldiee.github.io/akanname/"> akannme </a>
+    </div>
+  </footer>
+<script src="script.js"></script>
 </body>
 </html>
